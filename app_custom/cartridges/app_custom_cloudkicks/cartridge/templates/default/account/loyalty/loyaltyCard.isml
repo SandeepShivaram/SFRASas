@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header clearfix">
+        <h2 class="pull-left">${Resource.msg('label.profile.loyalty','account',null)}</h2>
+        <a href="${URLUtils.url('Account-EditLoyalty')}" class="pull-right" aria-label="${Resource.msg('label.profile.editLyalty','account',null)}">${Resource.msg('link.edit','account',null)}</a>
+    </div>
+    <div class="card-body">        
+        <dl>
+            <dt class="dashboard-info">${Resource.msg('label.profile.isloyaltySelected','account',null)}</dt>
+            <dd>${pdict.account.loyalty.isloyaltySelected}</dd>
+        </dl>
+        <dl>
+            <dt class="dashboard-info">${Resource.msg('label.profile.rewardsPoint','account',null)}</dt>
+            <dd>${pdict.account.loyalty.rewardPoint}</dd>
+        </dl>
+    </div>
+</div>

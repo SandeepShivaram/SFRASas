@@ -1,0 +1,27 @@
+<form action="${URLUtils.url('Account-UpdateLoyalty')}" class="change-password-form" method="POST" <isprint value="${pdict.profileForm.attributes}" encoding="off" />>
+
+ <div class="form-group">
+       
+        <input
+            type="checkbox"
+             id="add-to-loyalty-list"
+            value="false" checked="false"
+            name="${pdict.loyaltyForm.customerloyalty.signupforloyalty.htmlName}"/>
+        
+        <label class="label" for="add-to-loyalty-list">
+            <isprint value="${pdict.loyaltyForm.customerloyalty.signupforloyalty.label}" encoding="htmlcontent" />
+        </label>
+    </div>
+
+    <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
+
+    <div class="row">
+        <div class="col">
+            <a href="${URLUtils.url('Account-Show')}" class="btn btn-block btn-outline-primary">${Resource.msg('button.cancel','account',null)}</a>
+        </div>
+
+        <div class="col">
+            <button type="submit" name="save" class="btn btn-save btn-block btn-primary">${Resource.msg('button.save','account',null)}</button>
+        </div>
+    </div>
+</form>
