@@ -1,0 +1,29 @@
+cartridges/dw.json
+.vscode/launch.json
+dw.json
+dw_bellacore.json
+app_custom/node_modules
+storefront-reference-architecture-master/node_modules
+
+git init
+git status
+touch .gitignore
+
+git add -A    added to the staging area
+git status 
+
+git reset filename
+git reset
+
+echo "# SFRAAssignment" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/SandeepShivaram/SFRAAssignment.git
+git push -u origin main 
+	
+	
+git remote add origin https://github.com/SandeepShivaram/SFRAAssignment.git
+git branch -M main
+git push -u origin main
